@@ -14,7 +14,7 @@ public class View extends AppCompatActivity implements ViewInterface {
         setContentView(R.layout.activity_view);
         textView = (TextView) findViewById(R.id.text_view);
         presenter = new Presenter(this);
-        presenter.MakeHelloWorldInTextView();
+        presenter.makeHelloWorldInTextView();
     }
 
     @Override

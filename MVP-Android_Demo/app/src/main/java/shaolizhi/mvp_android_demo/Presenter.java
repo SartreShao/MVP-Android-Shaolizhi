@@ -7,9 +7,8 @@ package shaolizhi.mvp_android_demo;
 class Presenter {
     private ModelInterface model;
     private ViewInterface view;
-    private Bean bean;
 
-    public Presenter(ViewInterface view) {
+    Presenter(ViewInterface view) {
         this.view = view;
         model = new Model();
     }
@@ -17,8 +16,8 @@ class Presenter {
     /**
      * 最终功能：让HelloWorld呈现在我们的TextView上
      */
-    public void MakeHelloWorldInTextView(){
-        bean = model.getBeanFromDatabase();
+    void makeHelloWorldInTextView(){
+        Bean bean = model.getBeanFromDatabase();
         view.loadBeanToTextView(bean);
     }
 }
