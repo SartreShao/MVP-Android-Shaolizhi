@@ -19,6 +19,6 @@ public class View extends AppCompatActivity implements ViewInterface {
 
     @Override
     public void loadBeanToTextView(Bean bean) {
-        textView.setText(bean.getStringForTextView());
+        textView.setText(bean.getString());
     }
 }

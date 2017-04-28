@@ -12,7 +12,7 @@ class Model implements ModelInterface {
     @Override
     public Bean getBeanFromDatabase() {
         Bean bean = new Bean();
-        bean.setStringForTextView("你好，世界！");
+        bean.setString("你好，世界！");
         return bean;
     }
 }

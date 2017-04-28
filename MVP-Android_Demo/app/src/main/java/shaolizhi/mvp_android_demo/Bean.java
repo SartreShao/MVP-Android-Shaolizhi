@@ -5,12 +5,13 @@ package shaolizhi.mvp_android_demo;
  */
 
 class Bean {
-    private String stringForTextView;
-    void setStringForTextView(String string)
-    {
-        stringForTextView = string;
+    private String string;
+
+    void setString(String string) {
+        this.string = string;
     }
-    String getStringForTextView(){
-        return stringForTextView;
+
+    String getString() {
+        return string;
     }
 }
