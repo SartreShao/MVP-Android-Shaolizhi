@@ -20,7 +20,8 @@
 
 ## Presenter类：
 我们在Presenter类中，把Model「输出」的数据，「输入」到View类中
-为了能让Presenter有这个功能，我们把Model类的「获取数据功能」和View类的「加载数据到TextView功能」通过写成「回调函数」，让Presenter回调
+
+为了能让Presenter有这个功能，我们把Model类的「获取数据功能」和View类的「加载数据到TextView功能」通过写成「回调函数」，让Presenter回调。因此创建了「View Interface」和「Model Interface」两个接口
 
 ## 怎么通过「接口」写「回调函数」
 建议阅读知乎的一篇文章：https://www.zhihu.com/question/19801131/answer/26586203
